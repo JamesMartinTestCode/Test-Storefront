@@ -1,0 +1,36 @@
+html {
+    height: 100%;
+}
+#signin {
+    display: none;
+}
+#newuser {
+    display: none;
+}
+#admin {
+    display: none;
+}
+#customer {
+    display: none;
+}
+li {
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+}
+div {
+    display: block;
+}
+body {
+    height: 100%;
+    width: 30em;
+}
+input, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

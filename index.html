@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Storefront</title>
+        <link rel="stylesheet" href="storefront.css">
+        <script src="storefront.js"></script>
+    </head>
+    <body>
+        <div id="existinguser">
+            <label for="exist">Existing User</label>
+            <select id="exist" name="exist" onchange="ChangeUserType()">
+                <option value="none">Pick One</option>
+                <option value="exist">Existing User</option>
+                <option value="new">New User</option>
+            </select>
+
+            <div id="newuser">
+                <label for="newfirstname">First Name</label>
+                <input type="text" id="newfirstname" name="firstname" placeholder="Your first name..">
+            
+                <label for="newlastname">Last Name</label>
+                <input type="text" id="newlastname" name="lastname" placeholder="Your last name..">
+            
+                <label for="newusername">User Name</label>
+                <input type="text" id="newusername" name="username" placeholder="Your username..">
+            
+                <label for="newpassword">Password</label>
+                <input type="password" id="newpassword" name="password" placeholder="Password..">
+            
+                <label for="newusertype">User Type</label>
+                <select id="newusertype" name="usertype">
+                    <option value="admin">Admin</option>
+                    <option value="customer">Customer</option>
+                </select>
+
+                <button onclick="NewUser()">Create New Account</button>
+            </div>
+
+            <div id="signin">
+            
+                <label for="existingusername">User Name</label>
+                <input type="text" id="existingusername" name="username" placeholder="Your username..">
+            
+                <label for="existingpassword">Password</label>
+                <input type="password" id="existingpassword" name="password" placeholder="Password..">
+
+                <button onclick="SignIn()">Sign In</button>
+            </div>
+        </div>
+
+        <div id="admin">
+            <label for="couponthreshold">Transactions needed</label>
+            <input type="number" id="couponthreshold" name="threshold">
+
+            <label for="couponamount">Discount</label>
+            <input type="number" id="couponamount" name="couponamount">
+            <button onclick="SetCouponThreshold()">Submit</button>
+            <button onclick="GetReport()">View Report</button>
+            <div id="report"></div>
+        </div>
+        
+        <div id="customer">
+            <input id="coupon"></input>
+            <input id="transactions"></input>
+            <button onclick="MakeTransaction()">Make Transaction</button>
+            <button onclick="HasCoupon()">Do you have a coupon?</button>
+        </div>
+    </body>
+</html>
+
