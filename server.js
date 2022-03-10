@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const path = "C:/Users/jamar/OneDrive/Desktop/coding/Projects/storefront/";
 const router = express.Router();
 const commands = require("./commands");
 
