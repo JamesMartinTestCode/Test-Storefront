@@ -6,7 +6,9 @@ class Customer {
         this.sPassword = data.password;
         this.sUserType = data.usertype;
         this.nTransactions = 0;
+        this.nTransactionsTowardsNextCoupon = 0;
         this.nCouponsEarned = 0;
+        this.nCouponAmount = 0;
         this.bHasCoupon = false;
     }
 }
